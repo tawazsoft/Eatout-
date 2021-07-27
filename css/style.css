@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -108,6 +109,37 @@ table {
 .nav .nav-inner #hamburger-6.is-active .line:nth-child(3) {
   -webkit-transform: translateY(-13px) rotate(90deg);
   transform: translateY(-13px) rotate(90deg);
+}
+
+.slider {
+  width: 100%;
+}
+
+.slick-slide {
+  width: 100%;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
 }
 
 @font-face {
@@ -373,6 +405,113 @@ table {
   background: black;
   border-radius: 0 60px 60px 60px;
   text-decoration: none;
+}
+
+.annual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.annual h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'achivo-semi-bold';
+}
+
+.annual p {
+  text-align: center;
+  font-family: 'Archivo-Regular';
+  font-size: 20px;
+  margin: 20px auto;
+}
+
+.annual .slider1 {
+  background-image: url(../img/h2-banner01.jpg);
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.annual .slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.annual .slick-dots {
+  position: absolute;
+  bottom: 170px;
+  left: 40px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.annual .slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 10px 5px;
+  padding: 0;
+  cursor: pointer;
+  background: white;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.annual .slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.annual .slick-dots li button:hover, .annual .slick-dots li button:focus {
+  outline: none;
+}
+
+.annual .slick-dots li button:hover:before, .annual .slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.annual .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (max-width: 575.98px) {

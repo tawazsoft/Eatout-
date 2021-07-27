@@ -315,6 +315,66 @@ table {
   text-decoration: none;
 }
 
+.movement {
+  margin: 30px auto;
+}
+
+.movement h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'achivo-semi-bold';
+  margin: 20px auto;
+}
+
+.movement .move-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.movement .move-inner .move-text {
+  background-image: url(../img/map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 44px;
+}
+
+.movement .move-inner .move-text h3 {
+  font-size: 35px;
+  font-family: 'achivo-semi-bold';
+  margin: 30px auto;
+}
+
+.movement .move-inner .move-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: 'achivo-regular';
+  margin-bottom: 85px;
+}
+
+.movement .move-inner .move-text a {
+  width: 208px;
+  padding: 15px 50px;
+  text-align: center;
+  color: white;
+  background: black;
+  border-radius: 0 60px 60px 60px;
+  text-decoration: none;
+}
+
 @media (max-width: 575.98px) {
   .nav {
     position: unset;
@@ -325,7 +385,7 @@ table {
   .banner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 120vh;
+    height: 120vh !important;
   }
   .banner .banner-img {
     height: 40vh;
@@ -356,6 +416,18 @@ table {
   .areas .areas-inner .area-card .area-body h3 {
     font-size: 24px;
   }
+  .movement h2 {
+    font-size: 29px;
+  }
+  .movement .move-inner .move-text {
+    margin: 20px 10px;
+  }
+  .movement .move-inner .move-text p {
+    margin-bottom: 30px;
+  }
+  .movement .move-inner .move-text a {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -363,7 +435,7 @@ table {
     position: unset;
   }
   .banner {
-    height: 44vh;
+    height: 45vh;
   }
   .banner .banner-img {
     height: 40vh;
@@ -397,25 +469,6 @@ table {
   .areas .areas-inner .area-card .area-body p {
     padding: 0 11px;
     padding-bottom: 33px;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  .banner {
-    height: 45vh;
-  }
-  .banner .banner-text h1 {
-    font-size: 30px;
-    padding-top: 87px;
-  }
-  .banner .banner-img {
-    height: 45vh;
-  }
-  .areas {
-    padding: 18px;
-  }
-  .areas .areas-inner .area-card {
-    margin: 0 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */

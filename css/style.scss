@@ -226,6 +226,69 @@
     }
 }
 
+
+// move
+
+.movement{
+
+    margin: 30px auto;
+
+    h2{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'achivo-semi-bold';
+        margin: 20px auto;
+        
+    }
+
+    .move-inner{
+        display: flex;
+        flex-wrap: wrap;
+
+        .move-text{
+            background-image: url(../img/map.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px 44px;
+
+            h3{
+                font-size: 35px;
+                font-family: 'achivo-semi-bold';
+                margin: 30px auto;
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 1.7;
+                font-family: 'achivo-regular';
+                margin-bottom: 85px;
+            }
+            a{
+                width: 208px;
+                padding: 15px 50px;
+                text-align: center;
+                color: white;
+                background: black;
+                border-radius: 0 60px 60px 60px ;
+                text-decoration: none;
+
+                
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
 @media (max-width: 575.98px) { 
 
 
@@ -246,7 +309,7 @@
     .banner{
 
         flex-wrap: wrap;
-        height: 120vh;
+        height: 120vh !important;
 
         .banner-img{
             height: 40vh;
@@ -294,6 +357,27 @@
         }
     }
 
+    .movement{
+
+        h2{
+            font-size: 29px;
+        }
+
+        .move-inner{
+            .move-text{
+                margin: 20px 10px;
+
+                p{
+                    margin-bottom: 30px;
+                }
+
+                a{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
   
 
 
@@ -316,9 +400,9 @@
 
     .banner{
 
+            height: 45vh;
         
-        height: 44vh;
-
+        
         .banner-img{
             height: 40vh;
             border-radius: unset;
@@ -376,32 +460,32 @@
  }
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {  
+// @media (max-width: 1199.98px) {  
 
-    .banner{
-        height: 45vh;
-        .banner-text{
-            h1{
-                font-size: 30px;
-                padding-top: 87px;
-            }
-        }
+//     .banner{
+//         height: 45vh;
+//         .banner-text{
+//             h1{
+//                 font-size: 30px;
+//                 padding-top: 87px;
+//             }
+//         }
 
-        .banner-img{
-            height: 45vh;
-        }
-    }
+//         .banner-img{
+//             height: 45vh;
+//         }
+//     }
 
-    .areas{
-        padding: 18px;
+//     .areas{
+//         padding: 18px;
 
-        .areas-inner{
-            .area-card{
-                margin: 0 8px;
-            }
-        }
-    }
-}
+//         .areas-inner{
+//             .area-card{
+//                 margin: 0 8px;
+//             }
+//         }
+//     }
+// }
 
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {  }

@@ -357,4 +357,65 @@ table {
     font-size: 24px;
   }
 }
+
+@media (max-width: 991.98px) {
+  .nav {
+    position: unset;
+  }
+  .banner {
+    height: 44vh;
+  }
+  .banner .banner-img {
+    height: 40vh;
+    border-radius: unset;
+    border-bottom: 8px solid #FF9F0D;
+  }
+  .banner .banner-text {
+    margin: 20px 10px;
+    padding: 10px;
+  }
+  .banner .banner-text h1 {
+    font-size: 25px;
+  }
+  .banner .banner-text a {
+    margin: 0 auto;
+  }
+  .areas {
+    padding: unset;
+  }
+  .areas h2 {
+    font-size: 30px;
+    margin: 28px  auto;
+  }
+  .areas .areas-inner .area-card {
+    margin: 15px 10px;
+    height: 410px;
+  }
+  .areas .areas-inner .area-card .area-body h3 {
+    font-size: 24px;
+  }
+  .areas .areas-inner .area-card .area-body p {
+    padding: 0 11px;
+    padding-bottom: 33px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .banner {
+    height: 45vh;
+  }
+  .banner .banner-text h1 {
+    font-size: 30px;
+    padding-top: 87px;
+  }
+  .banner .banner-img {
+    height: 45vh;
+  }
+  .areas {
+    padding: 18px;
+  }
+  .areas .areas-inner .area-card {
+    margin: 0 8px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

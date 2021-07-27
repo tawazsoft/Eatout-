@@ -305,10 +305,103 @@
  @media (max-width: 767.98px) {  }
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {  }
+@media (max-width: 991.98px) { 
+
+    .nav{
+
+        position: unset;
+
+        
+    }
+
+    .banner{
+
+        
+        height: 44vh;
+
+        .banner-img{
+            height: 40vh;
+            border-radius: unset;
+            border-bottom: 8px solid #FF9F0D;
+        }
+
+        .banner-text{
+            margin: 20px 10px;
+            padding: 10px;
+
+            h1{
+                font-size: 25px;
+            }
+
+            a{
+                margin: 0 auto;
+            }
+
+           
+        }
+    }
+
+    .areas{
+
+        padding: unset;
+
+        h2{
+            font-size: 30px;
+            margin: 28px  auto;
+        }
+
+        .areas-inner{
+
+            .area-card{
+                margin: 15px 10px;
+                height: 410px;
+
+                .area-body{
+                    
+                    h3{
+                        font-size: 24px;
+                    }
+
+                    p{
+                        padding: 0 11px;
+                        padding-bottom: 33px;
+
+                    }
+                }
+            }
+        }
+    }
+
+
+ }
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {  }
+@media (max-width: 1199.98px) {  
+
+    .banner{
+        height: 45vh;
+        .banner-text{
+            h1{
+                font-size: 30px;
+                padding-top: 87px;
+            }
+        }
+
+        .banner-img{
+            height: 45vh;
+        }
+    }
+
+    .areas{
+        padding: 18px;
+
+        .areas-inner{
+            .area-card{
+                margin: 0 8px;
+            }
+        }
+    }
+}
 
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {  }

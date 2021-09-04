@@ -735,7 +735,7 @@ table {
   .banner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 90vh !important;
+    height: 60vh !important;
   }
   .banner .banner-img {
     height: 40vh;
@@ -751,6 +751,9 @@ table {
   }
   .banner .banner-text a {
     margin: 0 auto;
+  }
+  .banner .banner-text p {
+    margin: 40px auto;
   }
   .areas {
     padding: unset;

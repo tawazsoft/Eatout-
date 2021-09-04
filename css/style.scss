@@ -630,7 +630,7 @@
     .banner{
 
         flex-wrap: wrap;
-        height: 90vh !important;
+        height: 60vh !important;
 
         .banner-img{
             height: 40vh;
@@ -649,6 +649,10 @@
 
             a{
                 margin: 0 auto;
+            }
+
+            p{
+                margin: 40px auto;
             }
 
            

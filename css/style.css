@@ -857,7 +857,7 @@ table {
     margin: 10px;
   }
   .annual .campain {
-    height: 86vh;
+    height: 90vh;
   }
   .annual .events {
     margin: 10px;
@@ -893,7 +893,7 @@ table {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    bottom: 58%;
+    bottom: 55%;
   }
   .volu {
     position: relative;

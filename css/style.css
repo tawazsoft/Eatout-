@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -267,16 +266,20 @@ table {
 }
 
 .banner .banner-img {
-  background-image: url(../img/h4-slider01.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: -1px;
-  background-position-x: -306px;
-  background-position: top center;
   height: 100vh;
   width: 100%;
-  border-left: 8px solid #FF9F0D;
-  border-bottom: 4px solid #FF9F0D;
+}
+
+.banner .banner-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50% 0% 0% 50%;
+  height: 774px;
+  width: 100%;
+  top: -110px;
+  position: relative;
+  border-left: 16px solid #FF9F0D;
+  border-bottom: 8px solid #FF9F0D;
   border-radius: 50% 0% 0% 50%;
 }
 
@@ -417,6 +420,7 @@ table {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 50px auto;
 }
 
 .annual h2 {
@@ -465,12 +469,11 @@ table {
 .annual .slick-dots li {
   position: relative;
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
   margin: 10px 5px;
   padding: 0;
   cursor: pointer;
-  background: white;
   border-radius: 100%;
   border: 1px solid white;
 }
@@ -493,25 +496,233 @@ table {
   outline: none;
 }
 
-.annual .slick-dots li button:hover:before, .annual .slick-dots li button:focus:before {
-  opacity: 1;
-}
-
 .annual .slick-dots li button:before {
   position: absolute;
   top: 0;
   left: 0;
-  content: "•";
+  display: none;
   width: 20px;
   height: 20px;
   font-family: "slick";
   font-size: 6px;
   line-height: 20px;
   text-align: center;
+}
+
+.annual .slick-dots li button {
+  border: 0;
+  background: white;
+  display: block;
+  height: 16px;
+  width: 16px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  border-radius: 100%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.annual .campain {
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+.annual .events {
+  position: relative;
+}
+
+.annual .events .r1-tab {
+  height: 500px;
+  background-image: url(../img/h2-banner01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+}
+
+.annual .events .overlay {
+  position: absolute;
+  border-radius: 0 58px 0 58px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.annual .events .overlay .main-text {
+  color: white;
+  font-size: 28px;
+  font-family: 'Archivo_Narrow';
+  line-height: 1.3;
+  width: 45%;
+  margin-left: 7rem;
+}
+
+.annual .events .case {
+  padding: 1rem;
+  width: 584px;
+  height: 400px;
+  background-color: white;
+  position: absolute;
+  bottom: -19%;
+  right: 2%;
+  border: 1px solid black;
+  border-radius: 0 75px 0 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.annual .events .tp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.annual .events .tp .b1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.annual .events .tp .b1 a {
+  background-color: inherit;
+  cursor: pointer;
+  margin: 10px  16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
   color: black;
-  opacity: 0.25;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 22px;
+  font-family: 'ArchivoNarrow-SemiBold';
+}
+
+.annual .events .tp .b1 a.active {
+  color: #F59727;
+}
+
+.annual .events .btm {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.annual .events .btm #London {
+  display: block;
+}
+
+.annual .events .btm .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: 1px solid #ccc;
+}
+
+.annual .events .btm .tabcontent a {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  outline: none;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0 25px 25px 25px;
+  margin-top: 30px;
+}
+
+.annual .events .btm .tabcontent p {
+  font-size: 19px;
+  font-family: 'achivo-regular';
+  line-height: 1.5;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.volu {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 818px;
+}
+
+.volu .center-map {
+  background-image: url(../img/image-removebg-preview.png);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.volu .center-map h2 {
+  font-size: 50px;
+  font-family: 'achivo-semi-bold';
+  text-align: center;
+}
+
+.volu .center-map a {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  outline: none;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0 25px 25px 25px;
+  margin-top: 30px;
 }
 
 @media (max-width: 575.98px) {
@@ -524,12 +735,12 @@ table {
   .banner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 120vh !important;
+    height: 90vh !important;
   }
   .banner .banner-img {
     height: 40vh;
     border-radius: unset;
-    border-bottom: 8px solid #FF9F0D;
+    display: none;
   }
   .banner .banner-text {
     margin: 20px 10px;
@@ -559,13 +770,59 @@ table {
     font-size: 29px;
   }
   .movement .move-inner .move-text {
-    margin: 20px 10px;
+    margin: 60px 10px;
   }
   .movement .move-inner .move-text p {
     margin-bottom: 30px;
   }
   .movement .move-inner .move-text a {
     margin: 0 auto;
+  }
+  .annual h2 {
+    font-size: 30px;
+    margin: 20px auto;
+  }
+  .annual p {
+    margin: 10px;
+  }
+  .annual .campain {
+    height: 100vh;
+  }
+  .annual .events {
+    margin: 10px;
+  }
+  .annual .events .r1-tab {
+    height: 338px;
+    background-position: center;
+  }
+  .annual .events .case {
+    bottom: -123%;
+    width: 100%;
+    border-radius: 4px;
+    right: 0;
+    padding: 1rem;
+  }
+  .annual .events .tp {
+    padding: unset;
+  }
+  .annual .events .tp .b1 a {
+    font-size: 13px;
+  }
+  .annual .events .overlay {
+    border-radius: unset;
+  }
+  .annual .events .overlay .main-text {
+    margin: 20px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+  }
+  .annual .slick-dots {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    bottom: 439px;
   }
 }
 
@@ -576,7 +833,7 @@ table {
   .banner {
     height: 45vh;
   }
-  .banner .banner-img {
+  .banner .banner-img img {
     height: 40vh;
     border-radius: unset;
     border-bottom: 8px solid #FF9F0D;

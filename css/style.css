@@ -780,6 +780,94 @@ table {
   width: 100px;
 }
 
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px auto;
+}
+
+.contact h2 {
+  font-size: 40px;
+  font-family: 'achivo-semi-bold';
+  margin: 20px auto;
+}
+
+.contact p {
+  font-size: 26px;
+  font-family: 'archivo';
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+}
+
+.contact .contact-inner {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000094), to(#000000ab)), url("../img/blog07.jpg");
+  background: linear-gradient(to bottom, #00000094, #000000ab), url("../img/blog07.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 57px 0 44px;
+}
+
+.contact .contact-inner p {
+  color: white;
+  line-height: 1.7;
+  font-size: 24px;
+  font-family: 'archivo';
+  width: 72%;
+}
+
+.contact .contact-inner h1 {
+  font-size: 50px;
+  color: white;
+  font-family: 'ArchivoNarrow-SemiBold';
+}
+
+.contact .contact-inner h3 {
+  font-size: 38px;
+  width: 85%;
+  color: white;
+  font-family: 'ArchivoNarrow-SemiBold';
+  text-align: center;
+  line-height: 1.2;
+}
+
+.contact .contact-inner a {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: #F59727;
+  outline: none;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0 25px 25px 25px;
+  margin-top: 30px;
+}
+
 @media (max-width: 575.98px) {
   .nav {
     position: unset;
@@ -857,7 +945,7 @@ table {
     margin: 10px;
   }
   .annual .campain {
-    height: 90vh;
+    height: 85vh;
   }
   .annual .events {
     margin: 10px;
@@ -909,6 +997,24 @@ table {
   }
   .volu img {
     display: none;
+  }
+  .contact h2 {
+    font-size: 27px;
+    text-align: center;
+  }
+  .contact .contact-inner {
+    height: 458px;
+  }
+  .contact .contact-inner p {
+    display: none;
+  }
+  .contact .contact-inner h3 {
+    font-size: 26px;
+    width: 100%;
+  }
+  .contact .contact-inner h1 {
+    font-size: 37px;
+    margin: 20px;
   }
 }
 

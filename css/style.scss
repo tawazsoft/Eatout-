@@ -1108,7 +1108,7 @@ footer{
 
         .slick-dots{
             flex-direction: row;
-            bottom: 55%;
+            bottom: 60%;
         }
     }
 
@@ -1149,6 +1149,7 @@ footer{
 
             height: 458px;
             margin: 30px 10px;
+            border-radius: unset;
             p{
                 display: none;
             }
@@ -1171,7 +1172,7 @@ footer{
 
         .footer-logo{
             height: 150px;
-            margin-left: 70px;
+            margin-left: 40px;
         }
         .contact-detail{
             display: flex;

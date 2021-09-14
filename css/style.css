@@ -1194,7 +1194,7 @@ footer .copy span i {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    bottom: 55%;
+    bottom: 60%;
   }
   .volu {
     position: relative;
@@ -1218,6 +1218,7 @@ footer .copy span i {
   .contact .contact-inner {
     height: 458px;
     margin: 30px 10px;
+    border-radius: unset;
   }
   .contact .contact-inner p {
     display: none;
@@ -1232,7 +1233,7 @@ footer .copy span i {
   }
   footer .footer-logo {
     height: 150px;
-    margin-left: 70px;
+    margin-left: 40px;
   }
   footer .contact-detail {
     display: -webkit-box;

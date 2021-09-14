@@ -1231,6 +1231,9 @@ footer .copy span i {
     font-size: 37px;
     margin: 20px;
   }
+  footer .copy span {
+    font-size: 18px;
+  }
   footer .footer-logo {
     height: 150px;
     margin-left: 40px;

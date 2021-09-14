@@ -742,6 +742,203 @@
 
 }
 
+// footer
+
+footer{
+    background-color: #F5F5F5;
+
+
+    .footer-inner{
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .contact-detail{
+
+            margin: 20px 0;
+
+            .location{
+
+                margin: 60px 0;
+                font-size: 25px;
+                font-family: 'achivo-r'; 
+                position: relative;
+
+                i{
+                    position: absolute;
+                    left: 20px;
+                    top: -35px;
+                    left: -71px;
+                }
+
+            }
+
+            h3{
+                font-size: 33px;
+                font-family: 'achivo-semi-bold' ;
+                margin: 50px 0;
+            }
+                p{
+                    position: relative;
+                    
+                    .mail{
+                        position: absolute;
+                        left: -70px;
+                        top: -11px;
+                    }
+
+                    display: flex;
+                    flex-direction: column;
+                    margin: 20px auto;
+                    margin-top: 50px;
+
+                     span{
+
+                margin: 10px 0;
+                font-size: 25px;
+                font-family: 'achivo-r'; 
+
+            }
+                }
+
+
+               
+
+
+                
+           
+
+            .numbers{
+                  
+                margin: 20px auto;
+                margin-bottom: 50px;
+
+                
+
+                li{
+                    margin: 15px 0;
+                    font-size: 25px;
+                    font-family: 'achivo-r'; 
+                    position: relative;
+
+                    i{
+                        position: absolute;
+                        top: -31px;
+                        left: -64px;
+                    }
+
+
+
+                }
+
+                
+
+            }
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .connect{
+
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            h3{
+                font-size: 31px;
+                font-family: 'achivo-semi-bold';
+                margin-top: 40px;
+            }
+
+            .social{
+
+                display: flex;
+                align-items: center;
+                margin-left: -27px;
+
+                a{
+                    margin: 10px 10px;
+                }
+            }
+
+            .news{
+
+                h2{
+                    font-size: 40px;
+                    font-family: 'achivo-semi-bold';
+                }
+
+                h3{
+                    font-family: 'achivo-regular' ;
+                    margin: 30px 0;
+                }
+            }
+
+            .form{
+                display: flex;
+                flex-direction: column;
+                input{
+                    height: 70px;
+                    width: 95%;
+                    background-color: black;
+                    border-radius: 0 60px 60px 60px;
+                    margin: 20px auto;
+                    outline: none;
+                    border: none;
+                    &::placeholder{
+                        color: white;
+                      padding: 20px;
+                    }
+                }
+
+                button{
+                    height: 70px;
+                    width: 95%;
+                    background-color: #F59727;
+                    border-radius: 0 60px 60px 60px;
+                    margin: 20px auto;
+                    outline: none;
+                    border: none;
+                    color: white;
+                }
+            }
+
+
+
+        }
+
+
+    } 
+
+    .copy{
+        display: flex;
+        align-items: center;
+        height: 100px;
+        background: black;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0  50px;
+        span{
+
+            color: white;
+            font-size: 20px;
+            font-family: 'Archivo-Regular';
+
+            i{
+                color: #F59727;
+            }
+        }
+    }
+
+
+
+}
+
 
 
 
@@ -817,7 +1014,7 @@
                 .area-body{
                     
                     h3{
-                        font-size: 24px;
+                        font-size: 23px !important;
                     }
                 }
             }
@@ -864,7 +1061,7 @@
         }
 
         .campain{
-            height: 85vh;
+            height: 100vh;
 
         }
 
@@ -951,6 +1148,7 @@
         .contact-inner{
 
             height: 458px;
+            margin: 30px 10px;
             p{
                 display: none;
             }
@@ -967,10 +1165,76 @@
     }
   
 
+    // footer
+
+    footer{
+
+        .footer-logo{
+            height: 150px;
+            margin-left: 70px;
+        }
+        .contact-detail{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            p{
+                .mail{
+                    
+                    left: 64px !important ;
+                    top: -72px !important ;
+                }
+            }
+            .numbers{
+                li{
+                    i{
+                        top: -75px !important;
+                        left: 104px !important;
+                    }
+                    }
+                }
+
+
+        }
+
+        .connect{
+            align-items: center;
+
+
+            .news{
+                text-align: center;
+            }
+
+            .form{
+                input{
+                    &::placeholder{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .location{
+            i{
+                top: -96px !important;
+                left: 44px !important;
+            }
+        }
+
+        
+        }
 
 
 
- }
+    }
+
+
+
+
+ 
 
 
  @media (max-width: 767.98px) {  }

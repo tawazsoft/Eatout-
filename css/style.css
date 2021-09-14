@@ -868,6 +868,219 @@ table {
   margin-top: 30px;
 }
 
+footer {
+  background-color: #F5F5F5;
+}
+
+footer .footer-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer-inner .contact-detail {
+  margin: 20px 0;
+}
+
+footer .footer-inner .contact-detail .location {
+  margin: 60px 0;
+  font-size: 25px;
+  font-family: 'achivo-r';
+  position: relative;
+}
+
+footer .footer-inner .contact-detail .location i {
+  position: absolute;
+  left: 20px;
+  top: -35px;
+  left: -71px;
+}
+
+footer .footer-inner .contact-detail h3 {
+  font-size: 33px;
+  font-family: 'achivo-semi-bold';
+  margin: 50px 0;
+}
+
+footer .footer-inner .contact-detail p {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px auto;
+  margin-top: 50px;
+}
+
+footer .footer-inner .contact-detail p .mail {
+  position: absolute;
+  left: -70px;
+  top: -11px;
+}
+
+footer .footer-inner .contact-detail p span {
+  margin: 10px 0;
+  font-size: 25px;
+  font-family: 'achivo-r';
+}
+
+footer .footer-inner .contact-detail .numbers {
+  margin: 20px auto;
+  margin-bottom: 50px;
+}
+
+footer .footer-inner .contact-detail .numbers li {
+  margin: 15px 0;
+  font-size: 25px;
+  font-family: 'achivo-r';
+  position: relative;
+}
+
+footer .footer-inner .contact-detail .numbers li i {
+  position: absolute;
+  top: -31px;
+  left: -64px;
+}
+
+footer .footer-inner .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-inner .connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+footer .footer-inner .connect h3 {
+  font-size: 31px;
+  font-family: 'achivo-semi-bold';
+  margin-top: 40px;
+}
+
+footer .footer-inner .connect .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -27px;
+}
+
+footer .footer-inner .connect .social a {
+  margin: 10px 10px;
+}
+
+footer .footer-inner .connect .news h2 {
+  font-size: 40px;
+  font-family: 'achivo-semi-bold';
+}
+
+footer .footer-inner .connect .news h3 {
+  font-family: 'achivo-regular';
+  margin: 30px 0;
+}
+
+footer .footer-inner .connect .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-inner .connect .form input {
+  height: 70px;
+  width: 95%;
+  background-color: black;
+  border-radius: 0 60px 60px 60px;
+  margin: 20px auto;
+  outline: none;
+  border: none;
+}
+
+footer .footer-inner .connect .form input::-webkit-input-placeholder {
+  color: white;
+  padding: 20px;
+}
+
+footer .footer-inner .connect .form input:-ms-input-placeholder {
+  color: white;
+  padding: 20px;
+}
+
+footer .footer-inner .connect .form input::-ms-input-placeholder {
+  color: white;
+  padding: 20px;
+}
+
+footer .footer-inner .connect .form input::placeholder {
+  color: white;
+  padding: 20px;
+}
+
+footer .footer-inner .connect .form button {
+  height: 70px;
+  width: 95%;
+  background-color: #F59727;
+  border-radius: 0 60px 60px 60px;
+  margin: 20px auto;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+footer .copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  background: black;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0  50px;
+}
+
+footer .copy span {
+  color: white;
+  font-size: 20px;
+  font-family: 'Archivo-Regular';
+}
+
+footer .copy span i {
+  color: #F59727;
+}
+
 @media (max-width: 575.98px) {
   .nav {
     position: unset;
@@ -916,7 +1129,7 @@ table {
     width: 100%;
   }
   .areas .areas-inner .area-card .area-body h3 {
-    font-size: 24px;
+    font-size: 23px !important;
   }
   .movement h2 {
     font-size: 29px;
@@ -945,7 +1158,7 @@ table {
     margin: 10px;
   }
   .annual .campain {
-    height: 85vh;
+    height: 100vh;
   }
   .annual .events {
     margin: 10px;
@@ -1004,6 +1217,7 @@ table {
   }
   .contact .contact-inner {
     height: 458px;
+    margin: 30px 10px;
   }
   .contact .contact-inner p {
     display: none;
@@ -1015,6 +1229,58 @@ table {
   .contact .contact-inner h1 {
     font-size: 37px;
     margin: 20px;
+  }
+  footer .footer-logo {
+    height: 150px;
+    margin-left: 70px;
+  }
+  footer .contact-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer .contact-detail p .mail {
+    left: 64px !important;
+    top: -72px !important;
+  }
+  footer .contact-detail .numbers li i {
+    top: -75px !important;
+    left: 104px !important;
+  }
+  footer .connect {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .connect .news {
+    text-align: center;
+  }
+  footer .connect .form input::-webkit-input-placeholder {
+    text-align: center;
+  }
+  footer .connect .form input:-ms-input-placeholder {
+    text-align: center;
+  }
+  footer .connect .form input::-ms-input-placeholder {
+    text-align: center;
+  }
+  footer .connect .form input::placeholder {
+    text-align: center;
+  }
+  footer .location i {
+    top: -96px !important;
+    left: 44px !important;
   }
 }
 

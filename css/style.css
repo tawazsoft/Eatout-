@@ -869,6 +869,41 @@ table {
   margin-top: 30px;
 }
 
+.donate {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.donate h2 {
+  font-size: 40px;
+  margin: 20px auto;
+}
+
+.donate h3 {
+  font-size: 20px;
+}
+
+.donate .donate-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+.donate .donate-inner .d-image {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000083), to(#00000048)), url(../img/blog07.jpg);
+  background: linear-gradient(to bottom, #00000083, #00000048), url(../img/blog07.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  border-radius: 0 75px 0 75px;
+  background-blend-mode: normal;
+}
+
 footer {
   background-color: #F5F5F5;
 }
@@ -1014,6 +1049,7 @@ footer .footer-inner .connect .form {
 }
 
 footer .footer-inner .connect .form input {
+  color: white;
   height: 70px;
   width: 95%;
   background-color: black;
@@ -1021,26 +1057,27 @@ footer .footer-inner .connect .form input {
   margin: 20px auto;
   outline: none;
   border: none;
+  padding: 30px;
 }
 
 footer .footer-inner .connect .form input::-webkit-input-placeholder {
   color: white;
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 footer .footer-inner .connect .form input:-ms-input-placeholder {
   color: white;
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 footer .footer-inner .connect .form input::-ms-input-placeholder {
   color: white;
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 footer .footer-inner .connect .form input::placeholder {
   color: white;
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 footer .footer-inner .connect .form button {
@@ -1082,7 +1119,7 @@ footer .copy span i {
   color: #F59727;
 }
 
-@media (max-width: 575.98px) {
+@media only screen and (max-width: 600px) {
   .nav {
     position: unset;
   }
@@ -1298,17 +1335,25 @@ footer .copy span i {
   footer .connect .news {
     text-align: center;
   }
+  footer .connect .form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   footer .connect .form input::-webkit-input-placeholder {
-    text-align: center;
+    padding: unset;
   }
   footer .connect .form input:-ms-input-placeholder {
-    text-align: center;
+    padding: unset;
   }
   footer .connect .form input::-ms-input-placeholder {
-    text-align: center;
+    padding: unset;
   }
   footer .connect .form input::placeholder {
-    text-align: center;
+    padding: unset;
   }
   footer .location {
     display: -webkit-box;

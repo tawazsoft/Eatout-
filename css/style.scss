@@ -762,22 +762,30 @@
         
 
         .d-image{
-            background: linear-gradient(to bottom, #00000083, #00000048), url(../img/blog07.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 600px;
-            border-radius: 0 75px 0 75px;
-            background-blend-mode: normal;
-            width: 100%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            // background: linear-gradient(to bottom, #00000083, #00000048), url(../img/blog07.jpg);
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position: center;
+            // height: 600px;
+            // border-radius: 0 75px 0 75px;
+            // background-blend-mode: normal;
+            // width: 100%;
+            // position: relative;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
 
-            .overlay{
-                height: 100%;
-                width: 100%;position: absolute;
+            // .overlay{
+            //     height: 100%;
+            //     width: 100%;position: absolute;
+            // }
+
+         
+
+            img{
+                height: 400px;
+                width: 100%;
+                object-fit: cover;
             }
 
         }
@@ -1145,7 +1153,7 @@ footer{
 
 
 
-@media only screen and(max-width: 600px) { 
+@media only screen and(max-width: 568px) { 
 
 
     .nav{
@@ -1378,15 +1386,32 @@ footer{
 
     .donate{
 
-           
+           h2{
+               font-size: 29px;
+
+           }
+           h3{
+               margin: 10px  auto;
+           }
 
         .donate-inner{
 
             border-radius: unset;
             box-shadow: unset;
 
+           .d-image{
+               display: flex;
+               align-items: center;
+               margin: 10px 4px;
+           }
+
             .donate-info{
                 margin: unset;
+                text-align: center;
+
+                h3{
+                    margin: 20px  auto;
+                }
 
                 .prices{
                     button{

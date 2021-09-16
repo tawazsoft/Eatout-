@@ -897,32 +897,11 @@ table {
           box-shadow: 16px 7px 17px 18px rgba(0, 0, 0, 0.16);
 }
 
-.donate .donate-inner .d-image {
-  background: -webkit-gradient(linear, left top, left bottom, from(#00000083), to(#00000048)), url(../img/blog07.jpg);
-  background: linear-gradient(to bottom, #00000083, #00000048), url(../img/blog07.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  border-radius: 0 75px 0 75px;
-  background-blend-mode: normal;
+.donate .donate-inner .d-image img {
+  height: 400px;
   width: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.donate .donate-inner .d-image .overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .donate .donate-inner .donate-info {
@@ -1300,7 +1279,7 @@ footer .copy span i {
   color: #F59727;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 568px) {
   .nav {
     position: unset;
   }
@@ -1457,13 +1436,32 @@ footer .copy span i {
     font-size: 37px;
     margin: 20px;
   }
+  .donate h2 {
+    font-size: 29px;
+  }
+  .donate h3 {
+    margin: 10px  auto;
+  }
   .donate .donate-inner {
     border-radius: unset;
     -webkit-box-shadow: unset;
             box-shadow: unset;
   }
+  .donate .donate-inner .d-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px 4px;
+  }
   .donate .donate-inner .donate-info {
     margin: unset;
+    text-align: center;
+  }
+  .donate .donate-inner .donate-info h3 {
+    margin: 20px  auto;
   }
   .donate .donate-inner .donate-info .prices button {
     margin: 10px 5px;

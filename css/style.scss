@@ -739,7 +739,7 @@
 
 .donate{
 
-
+    
     text-align: center;
     h2{
         font-size: 40px;
@@ -747,6 +747,7 @@
     }
     h3{
         font-size: 20px;
+        margin-left: 40px;
 
     }
     margin-top: 30px;
@@ -754,7 +755,10 @@
     .donate-inner{
         display: flex;
         flex-wrap: wrap;
-        margin: 20px auto;
+        margin-top: 50px;
+        border-radius:  0 75px 0 75px;
+        box-shadow: 16px 7px 17px 18px rgba(0,0,0,0.16);
+        
         
 
         .d-image{
@@ -765,9 +769,166 @@
             height: 600px;
             border-radius: 0 75px 0 75px;
             background-blend-mode: normal;
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .overlay{
+                height: 100%;
+                width: 100%;position: absolute;
+            }
 
         }
- 
+        
+        .donate-info{
+            text-align: left;
+            margin: 20px;
+           
+            width: 100%;
+            .prices{
+                width: 90%;
+             
+                margin: 20px 20px;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              
+                border-top: 2px solid #F5F5F5;
+                // border-bottom: 2px solid #F5F5F5;
+            
+                input{
+                    height: 44px;
+                    width: 100%;
+                    border-radius: 0 60px 60px 60px;
+                    border: none;
+                    background-color: #F5F5F5;
+                    padding: 20px;
+            
+                }
+            
+            
+                .price{
+                    width: 100%;
+                    margin-bottom: 4vh;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            
+            
+                button{
+                    border: none;
+                    outline: none;
+                    transition: 400ms ease;
+                    background-color: #111;
+                    color: #eee;
+                    padding: 10px 20px;
+                    margin-left: 20px;
+            
+                    border-radius: 15px 0 15px 0;
+            
+                    &.active{
+                        background-color: #F59727;
+                    }
+                }
+                .active{
+                    background-color: #F59727;
+                }
+                .opts{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                }
+            }
+
+            .methods{
+
+                border-top: 2px solid #F5F5F5;
+                margin: 20px auto;
+                width: 90%;
+
+                    .custom01{
+                        margin: 20px 0;
+                       
+                       input{
+                           margin: 0 5px;
+
+                       }
+
+
+                          
+                
+            }
+        }
+
+        .donate-form{
+
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            flex-direction: column;
+           align-content: center;
+           border-top: 2px solid #F5F5F5;
+           justify-content: center;
+           margin: 20px 20px;
+           width: 90%;
+
+            input{
+                height: 44px;
+                border-radius: 0 60px 60px 60px;
+                border: none;
+                width: 90%;
+                background-color: #F5F5F5;
+                padding: 20px;
+        
+            }
+
+
+            a{
+                border-radius: 0 60px 60px 60px;
+                height: 44px;
+                background: #F59727;
+                color: #F5F5F5;
+                text-decoration: none;
+                width: 30%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+               }
+
+                .form-1{
+                    display: flex;
+                   justify-content: center;
+                   margin: 20px 0;
+
+                
+
+                   #name{
+                       width: 40%;
+                       margin-right: 45px;
+                   }
+                   #last{
+                       width: 50%;
+                   }
+
+                  
+
+                  
+
+
+
+
+
+                  
+                }
+
+        }
 
     }
 
@@ -776,7 +937,7 @@
 
 
 }
-
+}
 
 
 
@@ -1213,6 +1374,37 @@ footer{
                 margin: 20px;
             }
         }
+    }
+
+    .donate{
+
+           
+
+        .donate-inner{
+
+            border-radius: unset;
+            box-shadow: unset;
+
+            .donate-info{
+                margin: unset;
+
+                .prices{
+                    button{
+                        margin: 10px 5px;
+                    }
+            }
+            .donate-form{
+                align-items: center;
+            }
+
+            
+            }
+
+
+
+
+        }
+
     }
   
 

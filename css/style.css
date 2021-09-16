@@ -882,6 +882,7 @@ table {
 
 .donate h3 {
   font-size: 20px;
+  margin-left: 40px;
 }
 
 .donate .donate-inner {
@@ -890,7 +891,10 @@ table {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 20px auto;
+  margin-top: 50px;
+  border-radius: 0 75px 0 75px;
+  -webkit-box-shadow: 16px 7px 17px 18px rgba(0, 0, 0, 0.16);
+          box-shadow: 16px 7px 17px 18px rgba(0, 0, 0, 0.16);
 }
 
 .donate .donate-inner .d-image {
@@ -902,6 +906,183 @@ table {
   height: 600px;
   border-radius: 0 75px 0 75px;
   background-blend-mode: normal;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.donate .donate-inner .d-image .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.donate .donate-inner .donate-info {
+  text-align: left;
+  margin: 20px;
+  width: 100%;
+}
+
+.donate .donate-inner .donate-info .prices {
+  width: 90%;
+  margin: 20px 20px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid #F5F5F5;
+}
+
+.donate .donate-inner .donate-info .prices input {
+  height: 44px;
+  width: 100%;
+  border-radius: 0 60px 60px 60px;
+  border: none;
+  background-color: #F5F5F5;
+  padding: 20px;
+}
+
+.donate .donate-inner .donate-info .prices .price {
+  width: 100%;
+  margin-bottom: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.donate .donate-inner .donate-info .prices button {
+  border: none;
+  outline: none;
+  -webkit-transition: 400ms ease;
+  transition: 400ms ease;
+  background-color: #111;
+  color: #eee;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 15px 0 15px 0;
+}
+
+.donate .donate-inner .donate-info .prices button.active {
+  background-color: #F59727;
+}
+
+.donate .donate-inner .donate-info .prices .active {
+  background-color: #F59727;
+}
+
+.donate .donate-inner .donate-info .prices .opts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.donate .donate-inner .donate-info .methods {
+  border-top: 2px solid #F5F5F5;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.donate .donate-inner .donate-info .methods .custom01 {
+  margin: 20px 0;
+}
+
+.donate .donate-inner .donate-info .methods .custom01 input {
+  margin: 0 5px;
+}
+
+.donate .donate-inner .donate-info .donate-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-top: 2px solid #F5F5F5;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 20px;
+  width: 90%;
+}
+
+.donate .donate-inner .donate-info .donate-form input {
+  height: 44px;
+  border-radius: 0 60px 60px 60px;
+  border: none;
+  width: 90%;
+  background-color: #F5F5F5;
+  padding: 20px;
+}
+
+.donate .donate-inner .donate-info .donate-form a {
+  border-radius: 0 60px 60px 60px;
+  height: 44px;
+  background: #F59727;
+  color: #F5F5F5;
+  text-decoration: none;
+  width: 30%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.donate .donate-inner .donate-info .donate-form .form-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+.donate .donate-inner .donate-info .donate-form .form-1 #name {
+  width: 40%;
+  margin-right: 45px;
+}
+
+.donate .donate-inner .donate-info .donate-form .form-1 #last {
+  width: 50%;
 }
 
 footer {
@@ -1275,6 +1456,22 @@ footer .copy span i {
   .contact .contact-inner h1 {
     font-size: 37px;
     margin: 20px;
+  }
+  .donate .donate-inner {
+    border-radius: unset;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+  }
+  .donate .donate-inner .donate-info {
+    margin: unset;
+  }
+  .donate .donate-inner .donate-info .prices button {
+    margin: 10px 5px;
+  }
+  .donate .donate-inner .donate-info .donate-form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer .copy span {
     font-size: 18px;

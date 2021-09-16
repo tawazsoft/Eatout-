@@ -46,3 +46,22 @@ function openCity(evt, cityName) {
 
 // modal
 
+const inputField = document.querySelector('#price-input');
+const priceBtns = document.querySelectorAll('.opts button');
+
+
+for (let i = 0; i < priceBtns.length; i++) {
+    priceBtns[i].addEventListener('click',()=>{
+        for (let e = 0; e < priceBtns.length; e++) {
+            priceBtns[e].classList.remove('active');   
+        }
+        priceBtns[i].classList.toggle('active');
+        if (priceBtns[i].textContent.toLowerCase() == 'custom'){
+            inputField.value = "$"
+        }else{
+            inputField.value = priceBtns[i].textContent
+        }
+        input.focus();
+    })
+    
+}

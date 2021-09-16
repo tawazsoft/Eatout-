@@ -1456,6 +1456,9 @@ footer .copy span i {
             align-items: center;
     margin: 10px 4px;
   }
+  .donate .donate-inner .d-image img {
+    height: 445px;
+  }
   .donate .donate-inner .donate-info {
     margin: unset;
     text-align: center;

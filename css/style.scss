@@ -31,6 +31,11 @@
     height: 100px;
     z-index: 1;
 
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+
 
     .nav-inner{
 
@@ -41,11 +46,11 @@
 
 
         .links{
-
+          
             display: flex;
             list-style-type: none;
             align-items: center;
-            // display: none;
+            
             margin-right: 100px;
             li{
                 a{
@@ -1229,6 +1234,17 @@ footer{
 @media only screen and(max-width: 568px) { 
 
 
+    .nav{
+
+        .nav-inner{
+
+            .links{
+            display: none;
+        }
+        }
+
+        
+    }
     
 
 
@@ -1615,6 +1631,8 @@ footer{
     .nav{
 
         position: unset;
+
+       
 
         
     }

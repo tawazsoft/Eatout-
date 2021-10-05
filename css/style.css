@@ -56,7 +56,7 @@ table {
   position: relative;
   z-index: 5;
   top: 5%;
-  right: 5%;
+  right: 10%;
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -68,15 +68,15 @@ table {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   height: 5px;
-  width: 90%;
+  width: 60%;
   list-style: none;
-  background: #fff;
+  background: #000;
   -webkit-transition: .9s;
   transition: .9s;
 }
 
 .nav ul.toggle li:nth-of-type(1) {
-  width: 50%;
+  width: 100%;
   top: 20%;
 }
 
@@ -85,8 +85,7 @@ table {
 }
 
 .nav ul.toggle li:nth-of-type(3) {
-  width: 50%;
-  left: 46%;
+  width: 100%;
   top: 80%;
 }
 
@@ -95,11 +94,13 @@ table {
   -webkit-transform: translateY(-50%) rotate(45deg);
           transform: translateY(-50%) rotate(45deg);
   width: 100%;
+  background: #fff;
 }
 
 .nav ul.toggle.active li:nth-of-type(2) {
   left: -100%;
   opacity: 0;
+  background: #fff;
 }
 
 .nav ul.toggle.active li:nth-of-type(3) {
@@ -108,6 +109,7 @@ table {
           transform: translateY(-50%) rotate(-45deg);
   width: 100%;
   left: 7%;
+  background: #fff;
 }
 
 /******Sidebar******/
@@ -261,6 +263,11 @@ table {
   position: absolute;
   height: 100px;
   z-index: 1;
+}
+
+.nav .logo {
+  height: 100px;
+  width: 100px;
 }
 
 .nav .nav-inner {
@@ -1427,6 +1434,9 @@ footer .copy span i {
 }
 
 @media only screen and (max-width: 568px) {
+  .nav .nav-inner .links {
+    display: none;
+  }
   .banner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

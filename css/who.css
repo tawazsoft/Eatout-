@@ -68,15 +68,15 @@ table {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   height: 5px;
-  width: 90%;
+  width: 60%;
   list-style: none;
-  background: #fff;
+  background: white;
   -webkit-transition: .9s;
   transition: .9s;
 }
 
 .nav ul.toggle li:nth-of-type(1) {
-  width: 50%;
+  width: 100%;
   top: 20%;
 }
 
@@ -85,8 +85,7 @@ table {
 }
 
 .nav ul.toggle li:nth-of-type(3) {
-  width: 50%;
-  left: 46%;
+  width: 100%;
   top: 80%;
 }
 
@@ -228,6 +227,7 @@ table {
 
 .nav .nav-inner .links {
   margin-right: 100px;
+  display: none;
 }
 
 .nav .nav-inner .links li a {

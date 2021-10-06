@@ -259,7 +259,7 @@ table {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-color: #f3fafec0;
+  background-color: rgba(255, 255, 255, 0.452);
   position: absolute;
   height: 100px;
   z-index: 1;
@@ -278,6 +278,7 @@ table {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 1;
+  margin: 20px;
 }
 
 .nav .nav-inner .links {
@@ -1728,6 +1729,7 @@ footer .copy span i {
 @media (max-width: 991.98px) {
   .nav {
     position: unset;
+    background-color: white;
   }
   .banner {
     height: 45vh;

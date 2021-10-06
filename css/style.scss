@@ -26,7 +26,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: #f3fafec0;
+    background-color: rgba(255, 255, 255, 0.452);
     position: absolute;
     height: 100px;
     z-index: 1;
@@ -41,8 +41,8 @@
 
         display: flex;
         justify-content: space-between;
-        z-index: 1;
-       
+        z-index: 1;    
+        margin: 20px;       
 
 
         .links{
@@ -1631,7 +1631,7 @@ footer{
     .nav{
 
         position: unset;
-
+        background-color: white;
        
 
         

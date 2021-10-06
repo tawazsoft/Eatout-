@@ -893,6 +893,15 @@ footer .copy span i {
     margin: unset;
     text-align: left;
   }
+  .our-values {
+    position: relative;
+  }
+  .our-values .value-img {
+    position: relative;
+  }
+  .our-values .value-img .back {
+    position: absolute;
+  }
   footer {
     background-color: #F5F5F5;
   }

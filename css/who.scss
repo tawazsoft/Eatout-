@@ -773,6 +773,18 @@ footer{
 }
 
 
+.our-values{
+    position: relative;
+    .value-img{
+        position: relative; 
+        .back{
+            position: absolute;
+        }
+    }
+   
+}
+
+
 
 footer{
     background-color: #F5F5F5;

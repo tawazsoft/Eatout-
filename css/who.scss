@@ -775,10 +775,16 @@ footer{
 
 .our-values{
     position: relative;
+    display: flex;
     .value-img{
         position: relative; 
+        
         .back{
             position: absolute;
+            left: -73%;
+             top: -105%;
+             z-index: -1;
+             
         }
     }
    

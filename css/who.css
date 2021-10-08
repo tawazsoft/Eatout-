@@ -895,12 +895,18 @@ footer .copy span i {
   }
   .our-values {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .our-values .value-img {
     position: relative;
   }
   .our-values .value-img .back {
     position: absolute;
+    left: -73%;
+    top: -105%;
+    z-index: -1;
   }
   footer {
     background-color: #F5F5F5;

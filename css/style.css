@@ -1052,10 +1052,13 @@ table {
 }
 
 .donate .donate-inner .d-image img {
-  height: 400px;
+  height: 600px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
 .donate .donate-inner .donate-info {

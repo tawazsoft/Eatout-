@@ -833,30 +833,15 @@
         
 
         .d-image{
-            // background: linear-gradient(to bottom, #00000083, #00000048), url(../img/blog07.jpg);
-            // background-repeat: no-repeat;
-            // background-size: cover;
-            // background-position: center;
-            // height: 600px;
-            // border-radius: 0 75px 0 75px;
-            // background-blend-mode: normal;
-            // width: 100%;
-            // position: relative;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-
-            // .overlay{
-            //     height: 100%;
-            //     width: 100%;position: absolute;
-            // }
+           
 
          
 
             img{
-                height: 400px;
+                height: 600px;
                 width: 100%;
                 object-fit: cover;
+                min-height: fit-content;
             }
 
         }

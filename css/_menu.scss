@@ -50,11 +50,16 @@
 }
 
 /******Sidebar******/
+.sidebar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .nav .sidebar{
   position: fixed;
   top: 0;  left: -443px;
   background: black;
-     height: 99.5vh;
+   height: 99.5vh;
   box-sizing: border-box;
   padding: 50px 40px;
   text-align: center;

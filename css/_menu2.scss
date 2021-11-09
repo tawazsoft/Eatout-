@@ -47,6 +47,12 @@
 }
 
 /******Sidebar******/
+.sidebar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav .sidebar{
   position: fixed;
   top: 0;  left: -443px;
